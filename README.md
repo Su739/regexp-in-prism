@@ -1,7 +1,7 @@
 # regexp-in-prism
 To gain the regexp in prismjs, via the input language name.
 
-npm i -S extract-prsim
+`npm i -S extract-prsim`
 
 run command
 ```
