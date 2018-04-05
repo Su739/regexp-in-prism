@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 
 const argv = process.argv;
-const filePath = __dirname;
 const loadLanguages = require('prismjs/components/index');
+const outputDir = process.cwd();
 const fs = require('fs');
 const Prism = require('prismjs');
 const { isArray, isRegExp } = require('lodash');
@@ -101,7 +101,7 @@ argv.forEach((langName = 'javascript') => {
     findPattern(name, langRegObj[name], checkers, 'inside');
   });
 
-  fs.writeFile(`${filePath}/${langName}.js`, convertArrayToStr(langName), (err) => {
+  fs.writeFile(`${outputDir}/${langName}.js`, convertArrayToStr(langName), (err) => {
     if (err) {
       console.log(err);
       return;

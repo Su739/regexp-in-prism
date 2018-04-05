@@ -1,6 +1,6 @@
 {
   "name": "extract-prsim",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "description": "Traverse the partial RegExp in prism-js",
   "main": "index.js",
   "bin": {
@@ -10,7 +10,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "Su739",
   "license": "MIT",
   "dependencies": {
     "lodash": "^4.17.5",
